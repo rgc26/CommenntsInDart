@@ -1,0 +1,30 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2025-08-01T12:41:04+08:00",
+  "id": "comments-in-dart",
+  "duration": 15,
+  "title": "Comments in Dart Tutorial",
+  "summary": "Learn about different types of comments in Dart including single-line, multi-line, and documentation comments",
+  "source": "comments-in-dart.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown",
+    "programming",
+    "dart"
+  ],
+  "tags": [
+    "web",
+    "dart",
+    "programming",
+    "comments"
+  ],
+  "feedback": "https://github.com/your-repo",
+  "url": "comments-in-dart"
+} 

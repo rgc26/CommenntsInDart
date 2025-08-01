@@ -1,0 +1,498 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Comments in Dart Tutorial</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14" ga4id=""></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  codelab-ga4id=""
+                  id="comments-in-dart"
+                  title="Comments in Dart Tutorial"
+                  environment="web"
+                  feedback-link="https://github.com/your-repo">
+    
+      <google-codelab-step label="Overview" duration="2">
+        <p>Welcome to the Comments in Dart Tutorial! This codelab will teach you everything you need to know about comments in Dart programming language. Comments are essential for writing readable and maintainable code.</p>
+<p><strong>What you'll learn:</strong></p>
+<ul>
+<li>Understanding what comments are and their purpose</li>
+<li>Different types of comments in Dart</li>
+<li>Single-line comments and their usage</li>
+<li>Multi-line comments for longer explanations</li>
+<li>Documentation comments for generating documentation</li>
+<li>Best practices for writing effective comments</li>
+</ul>
+<p><strong>Prerequisites:</strong></p>
+<ul>
+<li>Basic understanding of programming concepts</li>
+<li>Familiarity with Dart syntax (from previous tutorials)</li>
+</ul>
+<p><strong>Positive</strong><br>
+: Comments are crucial for code documentation and collaboration - they help you and others understand your code better!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Understanding Comments" duration="3">
+        <p><strong>Comments</strong> are the set of statements that are ignored by the Dart compiler during program execution. They are used to explain the code so that you or other people can understand it easily.</p>
+<h3 is-upgraded>What are Comments?</h3>
+<p>Comments are non-executable text in your code that provide explanations, documentation, or notes about what the code does. They are completely ignored by the Dart compiler and don't affect the program's execution.</p>
+<h3 is-upgraded>Why Use Comments?</h3>
+<p>Comments serve several important purposes:</p>
+<ul>
+<li><strong>Code Documentation</strong>: Explain what your code does</li>
+<li><strong>Code Maintenance</strong>: Help you understand your own code later</li>
+<li><strong>Team Collaboration</strong>: Help other developers understand your code</li>
+<li><strong>Debugging</strong>: Add notes about complex logic or workarounds</li>
+<li><strong>Documentation Generation</strong>: Create API documentation automatically</li>
+</ul>
+<h3 is-upgraded>Advantages of Comments</h3>
+<ul>
+<li>You can describe your code clearly</li>
+<li>Other people will understand your code more easily</li>
+<li>You can explain complex algorithms or business logic</li>
+<li>Comments help with code maintenance and debugging</li>
+<li>Documentation comments can generate API docs automatically</li>
+</ul>
+<p><strong>Positive</strong><br>
+: Good commenting practices make your code more professional and easier to maintain!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Types of Comments in Dart" duration="3">
+        <p>Dart supports three different types of comments, each with its own purpose and syntax.</p>
+<h3 is-upgraded>Comment Types Overview</h3>
+<ul>
+<li><strong>Single-Line Comment</strong>: For commenting on a single line of code
+  <ul>
+<li>Syntax: <code>// This is a single-line comment</code></li>
+</ul>
+</li>
+<li><strong>Multi-Line Comment</strong>: For commenting on multiple lines of code
+  <ul>
+<li>Syntax: <code>/* This is a multi-line comment */</code></li>
+</ul>
+</li>
+<li><strong>Documentation Comment</strong>: For generating documentation or reference for a project/software package
+  <ul>
+<li>Syntax: <code>/// This is a documentation comment</code></li>
+</ul>
+</li>
+</ul>
+<h3 is-upgraded>When to Use Each Type</h3>
+<ul>
+<li><strong>Single-Line Comments</strong>: Quick explanations, variable descriptions, TODO notes</li>
+<li><strong>Multi-Line Comments</strong>: Longer explanations, algorithm descriptions, section headers</li>
+<li><strong>Documentation Comments</strong>: API documentation, function descriptions, class documentation</li>
+</ul>
+<p><strong>Negative</strong><br>
+: Remember that comments should explain "why" not "what" - the code itself should be self-explanatory for the "what" part!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Single-Line Comments in Dart" duration="3">
+        <p>Single-line comments are the most common type of comment in Dart. They start with <code>//</code> and continue to the end of the line.</p>
+<h3 is-upgraded>Basic Single-Line Comment</h3>
+<pre><code language="language-dart" class="language-dart">void main() {
+// This is single-line comment.
+print("Welcome to Technology Channel.");
+}
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Welcome to Technology Channel.
+</code></pre>
+<h3 is-upgraded>Single-Line Comments with Code</h3>
+<pre><code language="language-dart" class="language-dart">void main() {
+  // Declare variables
+  String name = "John";  // User's name
+  int age = 25;         // User's age
+  
+  // Calculate years until retirement
+  int yearsToRetirement = 65 - age;  // Assuming retirement at 65
+  
+  // Display information
+  print("Name: $name");
+  print("Age: $age");
+  print("Years until retirement: $yearsToRetirement");
+}
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Name: John
+Age: 25
+Years until retirement: 40
+</code></pre>
+<h3 is-upgraded>Inline Comments</h3>
+<pre><code language="language-dart" class="language-dart">void main() {
+  int result = 10 + 20;  // Calculate sum
+  print(result);          // Display result
+  
+  // TODO: Add input validation
+  // FIXME: Handle edge case when age is negative
+  // NOTE: This function will be deprecated in version 2.0
+}
+</code></pre>
+<h3 is-upgraded>Best Practices for Single-Line Comments</h3>
+<ul>
+<li>Keep comments concise and clear</li>
+<li>Use comments to explain "why" not "what"</li>
+<li>Add comments for complex logic or business rules</li>
+<li>Use TODO, FIXME, or NOTE for special annotations</li>
+<li>Don't over-comment obvious code</li>
+</ul>
+<p><strong>Positive</strong><br>
+: Single-line comments are perfect for quick explanations and inline documentation!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Multi-Line Comments in Dart" duration="3">
+        <p>Multi-line comments are used when you need to write longer explanations that span multiple lines. They start with <code>/*</code> and end with <code>*/</code>.</p>
+<h3 is-upgraded>Basic Multi-Line Comment</h3>
+<pre><code language="language-dart" class="language-dart">void main(){  
+/*
+This is a multi-line comment.
+You can write multiple lines here.
+The compiler will ignore all of this text.
+*/
+    print("Welcome to Technology Channel.");  
+}  
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Welcome to Technology Channel.
+</code></pre>
+<h3 is-upgraded>Multi-Line Comments for Complex Logic</h3>
+<pre><code language="language-dart" class="language-dart">void main() {
+  /*
+   * This function calculates the compound interest
+   * Formula: A = P(1 + r/n)^(nt)
+   * Where:
+   * A = Final amount
+   * P = Principal amount
+   * r = Annual interest rate
+   * n = Number of times interest is compounded per year
+   * t = Time in years
+   */
+  
+  double principal = 1000;
+  double rate = 0.05;  // 5% annual interest
+  int time = 5;        // 5 years
+  int compoundings = 12; // Monthly compounding
+  
+  double amount = principal * pow((1 + rate/compoundings), (compoundings * time));
+  print("Final amount: \$${amount.toStringAsFixed(2)}");
+}
+</code></pre>
+<h3 is-upgraded>Multi-Line Comments for Section Headers</h3>
+<pre><code language="language-dart" class="language-dart">void main() {
+  /*
+   * ============================================
+   * STUDENT GRADE CALCULATOR
+   * ============================================
+   * This program calculates a student's final grade
+   * based on their scores in different subjects.
+   * ============================================
+   */
+  
+  // Variable declarations
+  double mathScore = 85.5;
+  double scienceScore = 92.0;
+  double englishScore = 78.5;
+  
+  // Calculate average
+  double average = (mathScore + scienceScore + englishScore) / 3;
+  
+  // Display results
+  print("Math: $mathScore");
+  print("Science: $scienceScore");
+  print("English: $englishScore");
+  print("Average: ${average.toStringAsFixed(2)}");
+}
+</code></pre>
+<p><strong>Negative</strong><br>
+: Multi-line comments should be used sparingly and only when single-line comments are insufficient!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Documentation Comments in Dart" duration="4">
+        <p>Documentation comments are special comments that start with <code>///</code> and are used to generate documentation for your code. They are particularly useful for creating API documentation.</p>
+<h3 is-upgraded>Basic Documentation Comment</h3>
+<pre><code language="language-dart" class="language-dart">void main(){  
+/// This is documentation comment
+    print("Welcome to Technology Channel.");  
+}  
+</code></pre>
+<p><strong>Output:</strong></p>
+<pre><code>Welcome to Technology Channel.
+</code></pre>
+<h3 is-upgraded>Documentation Comments for Functions</h3>
+<pre><code language="language-dart" class="language-dart">/// Calculates the area of a circle given its radius.
+/// 
+/// [radius] The radius of the circle in units.
+/// Returns the area of the circle in square units.
+/// 
+/// Example:
+/// ```dart
+/// double area = calculateCircleArea(5.0);
+/// print(area); // Output: 78.54
+/// ```
+double calculateCircleArea(double radius) {
+  const double pi = 3.14159;
+  return pi * radius * radius;
+}
+
+void main() {
+  double area = calculateCircleArea(5.0);
+  print("Circle area: ${area.toStringAsFixed(2)}");
+}
+</code></pre>
+<h3 is-upgraded>Documentation Comments for Classes</h3>
+<pre><code language="language-dart" class="language-dart">/// Represents a student in the school system.
+/// 
+/// This class contains information about a student including
+/// their name, age, and academic performance.
+class Student {
+  /// The student's full name.
+  final String name;
+  
+  /// The student's age in years.
+  final int age;
+  
+  /// The student's grade point average (0.0 to 4.0).
+  double gpa;
+  
+  /// Creates a new student with the given information.
+  /// 
+  /// [name] The student's full name.
+  /// [age] The student's age in years.
+  /// [gpa] The student's grade point average.
+  Student(this.name, this.age, this.gpa);
+  
+  /// Returns whether the student is eligible for honors.
+  /// 
+  /// A student is eligible for honors if their GPA is 3.5 or higher.
+  bool isEligibleForHonors() {
+    return gpa >= 3.5;
+  }
+}
+
+void main() {
+  Student student = Student("Alice Johnson", 18, 3.8);
+  print("Student: ${student.name}");
+  print("Eligible for honors: ${student.isEligibleForHonors()}");
+}
+</code></pre>
+<h3 is-upgraded>Generating Documentation</h3>
+<p>Documentation comments can be used with Dart's documentation generator (<code>dartdoc</code>) to create beautiful API documentation:</p>
+<pre><code language="language-bash" class="language-bash"># Generate documentation
+dart doc
+
+# Or for a specific package
+dart doc --output=docs
+</code></pre>
+<p><strong>Positive</strong><br>
+: Documentation comments are essential for creating professional API documentation and helping other developers use your code!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Best Practices for Comments" duration="2">
+        <p>Writing good comments is an art. Here are some best practices to follow when commenting your Dart code.</p>
+<h3 is-upgraded>Do's and Don'ts</h3>
+<p><strong>Do's:</strong></p>
+<ul>
+<li>Write comments that explain "why" not "what"</li>
+<li>Keep comments up-to-date with code changes</li>
+<li>Use clear and concise language</li>
+<li>Comment complex algorithms and business logic</li>
+<li>Use documentation comments for public APIs</li>
+<li>Add TODO, FIXME, or NOTE for special cases</li>
+</ul>
+<p><strong>Don'ts:</strong></p>
+<ul>
+<li>Don't comment obvious code</li>
+<li>Don't write comments that just repeat the code</li>
+<li>Don't leave outdated comments</li>
+<li>Don't over-comment simple code</li>
+<li>Don't use comments to explain bad code - fix the code instead</li>
+</ul>
+<h3 is-upgraded>Examples of Good vs Bad Comments</h3>
+<pre><code language="language-dart" class="language-dart">// ❌ Bad - Comment just repeats the code
+int age = 25; // Set age to 25
+
+// ✅ Good - Comment explains the business logic
+int age = 25; // Minimum age required for the program
+
+// ❌ Bad - Obvious comment
+print("Hello"); // Print hello
+
+// ✅ Good - Explains the purpose
+print("Hello"); // Display welcome message to user
+
+// ❌ Bad - Outdated comment
+int maxUsers = 100; // Maximum 50 users allowed
+
+// ✅ Good - Accurate comment
+int maxUsers = 100; // Maximum users allowed in the system
+</code></pre>
+<h3 is-upgraded>Special Comment Tags</h3>
+<pre><code language="language-dart" class="language-dart">// TODO: Add input validation for email field
+// FIXME: This calculation is off by 1 for edge cases
+// NOTE: This function will be deprecated in version 2.0
+// HACK: Temporary workaround until the bug is fixed
+// XXX: This code needs to be reviewed
+
+void processUserData(String email) {
+  // TODO: Validate email format
+  // FIXME: Handle empty email strings
+  
+  if (email.isEmpty) {
+    print("Error: Email cannot be empty");
+    return;
+  }
+  
+  // Process the email
+  print("Processing email: $email");
+}
+</code></pre>
+<p><strong>Positive</strong><br>
+: Following these best practices will make your code more professional and easier to maintain!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Practice Exercise" duration="2">
+        <p>Now it's time to practice what you've learned about comments in Dart!</p>
+<h3 is-upgraded>Exercise: Comment Your Code</h3>
+<p>Take the following Dart code and add appropriate comments to make it more readable and maintainable:</p>
+<pre><code language="language-dart" class="language-dart">void main() {
+  List<int> scores = [85, 92, 78, 96, 88];
+  int total = 0;
+  
+  for (int score in scores) {
+    total += score;
+  }
+  
+  double average = total / scores.length;
+  
+  if (average >= 90) {
+    print("Excellent performance!");
+  } else if (average >= 80) {
+    print("Good performance!");
+  } else if (average >= 70) {
+    print("Average performance!");
+  } else {
+    print("Needs improvement!");
+  }
+}
+</code></pre>
+<h3 is-upgraded>Sample Solution with Comments</h3>
+<pre><code language="language-dart" class="language-dart">/// Student Grade Calculator
+/// 
+/// This program calculates the average score from a list of test scores
+/// and provides feedback based on the performance level.
+void main() {
+  // List of student test scores
+  List<int> scores = [85, 92, 78, 96, 88];
+  
+  // Calculate total score
+  int total = 0;
+  for (int score in scores) {
+    total += score;
+  }
+  
+  // Calculate average score
+  double average = total / scores.length;
+  
+  // Provide feedback based on average score
+  if (average >= 90) {
+    print("Excellent performance!");
+  } else if (average >= 80) {
+    print("Good performance!");
+  } else if (average >= 70) {
+    print("Average performance!");
+  } else {
+    print("Needs improvement!");
+  }
+}
+</code></pre>
+<p><strong>Negative</strong><br>
+: Try to solve this exercise on your own before looking at the solution!</p>
+<p><strong>Positive</strong><br>
+: Practice is the best way to master commenting techniques!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Next Steps" duration="1">
+        <p>Congratulations! You've completed the Comments in Dart Tutorial. Here's what you've accomplished:</p>
+<h3 is-upgraded>What You've Learned</h3>
+<ul>
+<li>✅ Understanding of what comments are and their purpose</li>
+<li>✅ Knowledge of different types of comments in Dart</li>
+<li>✅ Single-line comments and their usage</li>
+<li>✅ Multi-line comments for longer explanations</li>
+<li>✅ Documentation comments for generating documentation</li>
+<li>✅ Best practices for writing effective comments</li>
+</ul>
+<h3 is-upgraded>Continue Your Learning Journey</h3>
+<p>To expand your Dart knowledge, consider learning about:</p>
+<ul>
+<li><strong>Operators in Dart</strong> - How to perform operations on data</li>
+<li><strong>Control Flow</strong> - Using conditions and loops</li>
+<li><strong>Functions</strong> - Creating reusable code blocks</li>
+<li><strong>Classes and Objects</strong> - Object-oriented programming</li>
+<li><strong>Error Handling</strong> - Managing exceptions and errors</li>
+<li><strong>Testing</strong> - Writing unit tests for your code</li>
+</ul>
+<h3 is-upgraded>Resources</h3>
+<ul>
+<li><a href="https://dart.dev/guides" target="_blank">Official Dart Documentation</a></li>
+<li><a href="https://dart.dev/guides/language/language-tour" target="_blank">Dart Language Tour</a></li>
+<li><a href="https://dart-tutorial.com" target="_blank">Dart Tutorial Website</a></li>
+<li><a href="https://dartpad.dev" target="_blank">DartPad</a> - Online Dart editor</li>
+</ul>
+<h3 is-upgraded>Final Challenge</h3>
+<p>Create a simple calculator program that:</p>
+<ul>
+<li>Uses all three types of comments appropriately</li>
+<li>Includes documentation comments for public functions</li>
+<li>Demonstrates best practices for commenting</li>
+<li>Has clear explanations for complex logic</li>
+</ul>
+<p><strong>Positive</strong><br>
+: You now have a solid understanding of comments in Dart and are ready to write well-documented, professional code!</p>
+<p><strong>Negative</strong><br>
+: Remember to always keep your comments up-to-date and use them to explain "why" not "what"!</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html> 
